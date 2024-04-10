@@ -27,15 +27,15 @@ class Turma:
         for professor in self._professores:
             if professor.get_CodProfessor() == codProf:
                 self._professores.remove(professor)
-                return f"O Professor {professor.get_NomeProf()} foi removido com sucesso!"
-        return f"Operação Invalida!\nNão foi encontrado professor com o código {codProf}!"
+                return f"O Professor {professor.get_NomeProf()} foi removido da turma com sucesso!"
+        return f"Operação Invalida!\nNão foi encontrado nesta turma um professor com o código {codProf}!"
 
-    def remove_aluno(self, codAluno):
+    def remove_aluno(self, matricula):
         for aluno in self._alunos:
-            if aluno.get_CodAluno() == aluno:
+            if aluno.get_matricula() == aluno:
                 self._alunos.remove(aluno)
-                return f"O Aluno {aluno.get_NomeAluno()} foi removido com sucesso!"
-        return f"Operação Invalida!\nNão foi encontrado aluno com o código {codAluno}!"
+                return f"O Aluno {aluno.get_NomeAluno()} foi removido da turma com sucesso!"
+        return f"Operação Invalida!\nNão foi encontrado nesta turma um aluno com o código {matricula}!"
 
     def listar_alunos(self):
         for aluno in self._alunos:

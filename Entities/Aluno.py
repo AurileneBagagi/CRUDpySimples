@@ -22,9 +22,6 @@ class Aluno:
     def get_matricula(self):
         return self._matricula
 
-    def set_matricula(self, matricula):
-        self._matricula = matricula
-
     def get_Periodo(self):
         return self._periodo
 
@@ -35,4 +32,4 @@ class Aluno:
         self._situacao = situacao
 
     def __str__(self):
-        return f"Nome: {self._nomeAluno}\n E-mail: {self._emailAluno}\n Matricula: {self._matricula}\n "
+        return f"Nome: {self._nomeAluno}\n E-mail: {self._emailAluno}\n Matricula: {self._matricula}\n Situação: {self.get_Situacao()}\n Periodo de ingresso: {self.get_Periodo()}"
