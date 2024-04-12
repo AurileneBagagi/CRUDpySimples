@@ -1,34 +1,34 @@
 class Professor:
-    def __init__(self, nomeProf, email, cpfProf, codProf, codDepartamento):
-        self._nomeProf = nomeProf
-        self._email = email
-        self._cpfProf = cpfProf
-        self._codProf = codProf
-        self._codDepartamento = codDepartamento
+    def __init__(self, nome_prof, email_prof, cpf_prof, cod_prof, cod_departamento):
+        self.__nome_prof = nome_prof
+        self.__email_prof = email_prof
+        self.__cpf_prof = cpf_prof
+        self.__cod_prof = cod_prof
+        self.__cod_departamento = cod_departamento
 
-    def get_NomeProf(self):
-        return self._nomeProf
+    def get_nome_prof(self):
+        return self.__nome_prof
 
-    def set_NomeProf(self, nomeProf):
-        self._nomeProf = nomeProf
+    def set_nome_prof(self, nome_prof):
+        self.__nome_prof = nome_prof
 
-    def get_EmailProf(self):
-        return self._emailProf
+    def get_email_prof(self):
+        return self.__email_prof
 
-    def set_EmailProf(self, emailProf):
-        self._emailProf = emailProf
+    def set_email_prof(self, email_prof):
+        self.__email_prof = email_prof
 
-    def get_CodProfessor(self):
-        return self._codProf
+    def get_cod_prof(self):
+        return self.__cod_prof
 
-    def set_CodProfessor(self, codProf):
-        self._codProf = codProf
+    def set_cod_prof(self, cod_prof):
+        self.__cod_prof = cod_prof
 
-    def get_CodDepartamentoProf(self):
-        return self._codProfDepartamento
+    def get_cod_departamento_prof(self):
+        return self.__cod_departamento
 
-    def set_CodDepartamentoProf(self, codDepartamento):
-        self._codDepartamento = codDepartamento
+    def set_cod_departamento_prof(self, cod_departamento):
+        self.__cod_departamento = cod_departamento
 
     def __str__(self):
-        return f"Nome: {self._nomeProf}\n E-mail: {self._emailProf}\n Código: {self._codProf}\n "
+        return f"Nome: {self.__nome_prof}\n E-mail: {self.__email_prof}\n Código: {self.__cod_prof}\n "

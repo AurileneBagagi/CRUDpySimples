@@ -1,31 +1,18 @@
 class Departamento:
-    def __init__(self, nomeDepartamento, codDepartamento):
-        self.nomeDepartamento = nomeDepartamento
-        self.codDepartamento = codDepartamento
+    def __init__(self, nome_departamento, cod_departamento):
+        self.__nome_departamento = nome_departamento
+        self.__cod_departamento = cod_departamento
 
-    def get_nomeDepartamento(self):
-        return self.nomeDepartamento
+    def get_nome_departamento(self):
+        return self.__nome_departamento
 
-    def set_nomeDepartamento(self, nomeDepartamento):
-        self.nomeDepartamento = nomeDepartamento
+    def set_nome_departamento(self, nome_departamento):
+        self.__nome_departamento = nome_departamento
 
-    def get_codDepartamento(self):
-        return self.codDepartamento
+    def get_cod_departamento(self):
+        return self.__cod_departamento
 
-    def set_codDepartamento(self, codDepartamento):
-        self.codDepartamento = codDepartamento
+    def set_cod_departamento(self, cod_departamento):
+        self.__cod_departamento = cod_departamento
 
 
-class ListaDeDepartamentos:
-    def __init__(self):
-        self.departamentos = []
-
-    def add_departamento(self, departamento):
-        self.departamentos.append(departamento)
-
-    def remove_departamento(self, codDepartamento):
-        for departamento in self.departamentos:
-            if departamento.get_codDepartamento() == codDepartamento:
-                self.departamentos.remove(departamento)
-                return f"o Departamento {departamento.get_nomeDepartamento()} foi removido com sucesso!"
-        return f"Operação Invalida!\nO Departamento {departamento.get_nomeDepartamento()} não foi encontrado!"
