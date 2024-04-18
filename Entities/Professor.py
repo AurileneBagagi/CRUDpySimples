@@ -1,10 +1,10 @@
 class Professor:
-    def __init__(self, nome_prof, email_prof, cpf_prof, cod_prof, cod_departamento):
-        self.__nome_prof = nome_prof
-        self.__email_prof = email_prof
-        self.__cpf_prof = cpf_prof
-        self.__cod_prof = cod_prof
-        self.__cod_departamento = cod_departamento
+    def __init__(self, nome_prof: str, email_prof: str, cpf_prof: str, cod_prof: str, cod_departamento: str):
+        self.__nome_prof: str = nome_prof
+        self.__email_prof: str = email_prof
+        self.__cpf_prof: str = cpf_prof
+        self.__cod_prof: str = cod_prof
+        self.__cod_departamento: str = cod_departamento
 
     def get_nome_prof(self):
         return self.__nome_prof
@@ -31,4 +31,4 @@ class Professor:
         self.__cod_departamento = cod_departamento
 
     def __str__(self):
-        return f"Nome: {self.__nome_prof}\n E-mail: {self.__email_prof}\n Código: {self.__cod_prof}\n "
+        return f"Nome: {self.__nome_prof}\nE-mail: {self.__email_prof}\nCódigo: {self.__cod_prof}\n "
